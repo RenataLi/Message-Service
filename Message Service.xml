@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Message Service</name>
+    </assembly>
+    <members>
+        <member name="M:Message_Service.Controllers.MessageController.SendMessage(Message_Service.Models.SendMessageRequest)">
+            <summary>
+            Send message to user.
+            </summary>
+            <param name="req">Request.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Controllers.MessageController.GetMessagesBySenderId(System.String)">
+            <summary>
+            Getting messages by senderId.
+            </summary>
+            <param name="senderId">SenderId.</param>
+            <returns>List of Messages.</returns>
+        </member>
+        <member name="M:Message_Service.Controllers.MessageController.GetMessagesByReceiverId(System.String)">
+            <summary>
+            Getting messages by receiverId.
+            </summary>
+            <param name="receiverId">ReceiverId.</param>
+            <returns>List of messages.</returns>
+        </member>
+        <member name="M:Message_Service.Controllers.MessageController.GetMessagesByReceiverId(System.String,System.String)">
+            <summary>
+            Getting messages by receiverId and SenderId.
+            </summary>
+            <param name="receiverId">ReceiverId.</param>
+            <param name="senderId">SenderId.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Controllers.UserController.CreateUser(Message_Service.Models.CreateUserRequest)">
+            <summary>
+            Create user.
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Controllers.UserController.GetRandomUsers">
+            <summary>
+            Initializing a list of users and messages using Random.
+            </summary>
+            <returns>List of users.</returns>
+        </member>
+        <member name="M:Message_Service.Controllers.UserController.GetUserById(System.String)">
+            <summary>
+            Find the user by ID.
+            </summary>
+            <param name="id">Id of user.</param>
+            <returns>User.</returns>
+        </member>
+        <member name="M:Message_Service.Controllers.UserController.GetAllUsers">
+            <summary>
+            Getting all users.
+            </summary>
+            <returns>List of users.</returns>
+        </member>
+        <member name="M:Message_Service.Controllers.UserController.GetAllUsers(System.Int32,System.Int32)">
+            <summary>
+            Getting users by limit and offset.
+            </summary>
+            <param name="Limit">Linit.</param>
+            <param name="Offset">Offset.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.#ctor">
+            <summary>
+            Class constructor.
+            </summary>
+        </member>
+        <member name="T:Message_Service.Service.Storage.UserList">
+            <summary>
+            Class usersList.
+            </summary>
+        </member>
+        <member name="M:Message_Service.Service.Storage.Serialize">
+            <summary>
+            Method for serislizing.
+            </summary>
+        </member>
+        <member name="M:Message_Service.Service.Storage.Deserialize">
+            <summary>
+            Method for deserializing.
+            </summary>
+        </member>
+        <member name="M:Message_Service.Service.Storage.CreateUser(System.String,System.String)">
+            <summary>
+            Creating user.
+            </summary>
+            <param name="id">Id.</param>
+            <param name="name">Name of user.</param>
+            <returns>User.</returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetById(System.String)">
+            <summary>
+            Getting user by Id.
+            </summary>
+            <param name="id">Id.</param>
+            <returns>User.</returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetAllUsesrs(System.Int32,System.Int32)">
+            <summary>
+            Getting All Users.
+            </summary>
+            <param name="limit">Limit.</param>
+            <param name="offset">Offset.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetAllUsesrs">
+            <summary>
+            Getting all users.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetMessagesBySenderId(System.String)">
+            <summary>
+            Getting messages by sender Id.
+            </summary>
+            <param name="senderId">Sender Id.</param>
+            <returns>List of messages.</returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetMessagesByReceiverId(System.String)">
+            <summary>
+            Getting messages by receiver Id.
+            </summary>
+            <param name="receiverId">Receiver Id.</param>
+            <returns>List of messages.</returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.GetMessagesByReceiverAndSenderId(System.String,System.String)">
+            <summary>
+            Getting messages by receiver Id and sender Id.
+            </summary>
+            <param name="receiverId">Receiver Id.</param>
+            <param name="senderId">Sender Id.</param>
+            <returns>List of messages.</returns>
+        </member>
+        <member name="M:Message_Service.Service.Storage.SendMessage(System.String,System.String,System.String,System.String)">
+            <summary>
+            Sending messages.
+            </summary>
+            <param name="receiverId">Receiver Id.</param>
+            <param name="senderId">Sender Id.</param>
+            <param name="subject">Subject.</param>
+            <param name="message">Message.</param>
+            <returns>Message.</returns>
+        </member>
+    </members>
+</doc>
